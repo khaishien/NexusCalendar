@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="NexusCalendarView">
+        <attr name="layoutBackgroundColor" format="color" />
+        <attr name="headerTextSize" format="dimension" />
+        <attr name="headerTextColor" format="color" />
+        <attr name="headerBackgroundColor" format="color" />
+        <attr name="headerArrowBackgroundColor" format="color" />
+        <attr name="weekTitleTextColor" format="color" />
+        <attr name="dayTextColor" format="color" />
+        <attr name="dayTextSize" format="dimension" />
+        <attr name="dayBackgroundColor" format="color" />
+        <attr name="dayBlankBackgroundColor" format="color" />
+        <attr name="dotColor" format="color" />
+    </declare-styleable>
+
+</resources>

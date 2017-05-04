@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kslau.nexus.samplenexuscalendar.MainActivity">
+
+    <com.kslau.nexus.nexuscalendar.NexusCalendarView
+        android:id="@+id/calendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:dayBackgroundColor="@color/colorPrimary"
+        app:dayTextColor="@android:color/white"
+        app:dotColor="@color/colorAccent"
+        app:headerArrowBackgroundColor="@android:color/black"
+        app:headerBackgroundColor="@android:color/white"
+        app:headerTextColor="@android:color/black"
+        app:headerTextSize="28sp"
+        app:layoutBackgroundColor="@android:color/background_light"
+        app:weekTitleTextColor="@android:color/black" />
+
+</RelativeLayout>
