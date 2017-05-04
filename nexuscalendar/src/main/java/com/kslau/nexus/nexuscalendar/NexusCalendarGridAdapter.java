@@ -7,6 +7,7 @@ import android.support.annotation.ColorInt;
 import android.text.Editable;
 import android.text.Spanned;
 import android.util.DisplayMetrics;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -78,7 +79,7 @@ public class NexusCalendarGridAdapter extends BaseAdapter {
         if (!dayModelList.get(position).isEmptyView()) {
             String dayStr = String.valueOf(dayModelList.get(position).getDay());
             viewHolder.textView.setTextColor(dayTextColor);
-            viewHolder.textView.setTextSize(dayTextSize);
+            viewHolder.textView.setTextSize(TypedValue.COMPLEX_UNIT_PX, dayTextSize);
             viewHolder.textView.setBackgroundColor(dayBackgroundColor);
             viewHolder.textView.setText("", TextView.BufferType.EDITABLE);
             Editable editableText = viewHolder.textView.getEditableText();
@@ -90,6 +91,7 @@ public class NexusCalendarGridAdapter extends BaseAdapter {
         } else {
             //empty view
             viewHolder.textView.setText("");
+            viewHolder.textView.setTextSize(TypedValue.COMPLEX_UNIT_PX, dayTextSize);
             viewHolder.textView.setBackgroundColor(dayBlankBackgroundColor);
 
         }
