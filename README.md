@@ -10,12 +10,14 @@ A Calendar library allow to visualize data between the months in different date.
 Example:
 
 ```xml
-<com.kslau.nexus.nexuscalendar.NexusCalendarView xmlns:app="http://schemas.android.com/apk/res-auto"
+<com.kslau.nexus.nexuscalendar.NexusCalendarView
         android:id="@+id/calendar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         app:dayBackgroundColor="@color/colorPrimary"
+        app:dayBlankBackgroundColor="@color/colorAccent"
         app:dayTextColor="@android:color/white"
+        app:dayTextSize="12sp"
         app:dotColor="@color/colorAccent"
         app:headerArrowBackgroundColor="@android:color/black"
         app:headerBackgroundColor="@android:color/white"
