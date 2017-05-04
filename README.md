@@ -1,10 +1,15 @@
 # Nexus Calendar
 A Calendar library allow to visualize data between the months in different date. This library provided customization UI attributes for calendar.  
 
+## Installation
+```
+compile 'com.kslau.nexus:nexuscalendar:1.0'
+```
+
 # Demo
 ![alt tag](nexusCalendarDemo.gif)
 
-## Installation
+
 
 ## Usage
 Example:
