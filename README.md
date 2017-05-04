@@ -26,43 +26,54 @@ Example:
 ```
 
  - **init**
-	NexusCalendarView nexusCalendarView = (NexusCalendarView) findViewById(R.id.calendar);
+ ```
+NexusCalendarView nexusCalendarView = (NexusCalendarView) findViewById(R.id.calendar);
+```
 
  - **set Month**
-	nexusCalendarView.setCurrentMonth(7);
+ ```
+nexusCalendarView.setCurrentMonth(7);
+```
 
  - **set Year**
-	nexusCalendarView.setCurrentYear(2017);
+ ```
+nexusCalendarView.setCurrentYear(2017);
+```
 
  - **update UI**
-	nexusCalendarView.updateUI();
-
+ ```
+nexusCalendarView.updateUI();
+```
 use this when exception case.
 
  - **add Dot**
-	nexusCalendarView.addDotValueToDate(11.9, new Date());
+ ```
+nexusCalendarView.addDotValueToDate(11.9, new Date());
+```
 
  - **set on click listener**
-	nexusCalendarView.setOnDateClickListener(new NexusCalendarView.OnDateClickListener() {
-            @Override
-            public void onDateClickListener(AdapterView<?> parent, View view, DayModel dayModel) {
-                Toast.makeText(MainActivity.this, "on click - Date: " + dayModel.getDate(), Toast.LENGTH_SHORT).show();
-            }
-        });
-
+ ```
+nexusCalendarView.setOnDateClickListener(new NexusCalendarView.OnDateClickListener() {
+    @Override
+    public void onDateClickListener(AdapterView<?> parent, View view, DayModel dayModel) {
+	Toast.makeText(MainActivity.this, "on click - Date: " + dayModel.getDate(), Toast.LENGTH_SHORT).show();
+    }
+});
+```
  - **set on long click listener**
-	 nexusCalendarView.setOnDateLongClickListener(new NexusCalendarView.OnDateLongClickListener() {
-            @Override
-            public boolean onDateLongClickListener(AdapterView<?> parent, View view, DayModel dayModel) {
-                Toast.makeText(MainActivity.this, "on long click - Date: " + dayModel.getDate(), Toast.LENGTH_SHORT).show();
-                return false;
-            }
-        });
-	
+ ```
+ nexusCalendarView.setOnDateLongClickListener(new NexusCalendarView.OnDateLongClickListener() {
+    @Override
+    public boolean onDateLongClickListener(AdapterView<?> parent, View view, DayModel dayModel) {
+	Toast.makeText(MainActivity.this, "on long click - Date: " + dayModel.getDate(), Toast.LENGTH_SHORT).show();
+	return false;
+    }
+});
+```
 	
 ## ChangeLog
-	#1.0
-	- **initial version**
+#1.0
+- **initial version**
 
 ## License
 MIT License
