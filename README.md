@@ -10,12 +10,14 @@ A Calendar library allow to visualize data between the months in different date.
 Example:
 
 ```xml
-<com.kslau.nexus.nexuscalendar.NexusCalendarView xmlns:app="http://schemas.android.com/apk/res-auto"
+<com.kslau.nexus.nexuscalendar.NexusCalendarView
         android:id="@+id/calendar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         app:dayBackgroundColor="@color/colorPrimary"
+        app:dayBlankBackgroundColor="@color/colorAccent"
         app:dayTextColor="@android:color/white"
+        app:dayTextSize="12sp"
         app:dotColor="@color/colorAccent"
         app:headerArrowBackgroundColor="@android:color/black"
         app:headerBackgroundColor="@android:color/white"
@@ -26,43 +28,54 @@ Example:
 ```
 
  - **init**
-	NexusCalendarView nexusCalendarView = (NexusCalendarView) findViewById(R.id.calendar);
+ ```
+NexusCalendarView nexusCalendarView = (NexusCalendarView) findViewById(R.id.calendar);
+```
 
  - **set Month**
-	nexusCalendarView.setCurrentMonth(7);
+ ```
+nexusCalendarView.setCurrentMonth(7);
+```
 
  - **set Year**
-	nexusCalendarView.setCurrentYear(2017);
+ ```
+nexusCalendarView.setCurrentYear(2017);
+```
 
  - **update UI**
-	nexusCalendarView.updateUI();
-
+ ```
+nexusCalendarView.updateUI();
+```
 use this when exception case.
 
  - **add Dot**
-	nexusCalendarView.addDotValueToDate(11.9, new Date());
+ ```
+nexusCalendarView.addDotValueToDate(11.9, new Date());
+```
 
  - **set on click listener**
-	nexusCalendarView.setOnDateClickListener(new NexusCalendarView.OnDateClickListener() {
-            @Override
-            public void onDateClickListener(AdapterView<?> parent, View view, DayModel dayModel) {
-                Toast.makeText(MainActivity.this, "on click - Date: " + dayModel.getDate(), Toast.LENGTH_SHORT).show();
-            }
-        });
-
+ ```
+nexusCalendarView.setOnDateClickListener(new NexusCalendarView.OnDateClickListener() {
+    @Override
+    public void onDateClickListener(AdapterView<?> parent, View view, DayModel dayModel) {
+	Toast.makeText(MainActivity.this, "on click - Date: " + dayModel.getDate(), Toast.LENGTH_SHORT).show();
+    }
+});
+```
  - **set on long click listener**
-	 nexusCalendarView.setOnDateLongClickListener(new NexusCalendarView.OnDateLongClickListener() {
-            @Override
-            public boolean onDateLongClickListener(AdapterView<?> parent, View view, DayModel dayModel) {
-                Toast.makeText(MainActivity.this, "on long click - Date: " + dayModel.getDate(), Toast.LENGTH_SHORT).show();
-                return false;
-            }
-        });
-	
+ ```
+ nexusCalendarView.setOnDateLongClickListener(new NexusCalendarView.OnDateLongClickListener() {
+    @Override
+    public boolean onDateLongClickListener(AdapterView<?> parent, View view, DayModel dayModel) {
+	Toast.makeText(MainActivity.this, "on long click - Date: " + dayModel.getDate(), Toast.LENGTH_SHORT).show();
+	return false;
+    }
+});
+```
 	
 ## ChangeLog
-	#1.0
-	- **initial version**
+#1.0
+- **initial version**
 
 ## License
 MIT License
